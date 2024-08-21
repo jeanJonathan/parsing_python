@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maintenance_report>
+    <!-- Hélicoptère 1 -->
+    <helicoptere id="H145D2" modele="H145">
+        <maintenance>
+            <date_maintenance>2024-08-20</date_maintenance>
+            <technicien nom="Dupont" prenom="Jean"/>
+            <operations>
+                <operation>
+                    <type>Maintenance préventive</type>
+                    <description>Inspection complète du moteur et remplacement des filtres</description>
+                    <date>2024-08-18</date>
+                    <temps_passe>2.5</temps_passe>
+                    <cout>1500.00</cout>
+                    <pieces_utilisees>
+                        <piece>
+                            <nom>Filtre à air</nom>
+                            <reference>FA-145</reference>
+                            <quantite>1</quantite>
+                        </piece>
+                        <piece>
+                            <nom>Huile moteur</nom>
+                            <reference>HM-320</reference>
+                            <quantite>5</quantite>
+                        </piece>
+                    </pieces_utilisees>
+                </operation>
+                <operation>
+                    <type>Réparation corrective</type>
+                    <description>Réparation du système de freinage</description>
+                    <date>2024-08-19</date>
+                    <temps_passe>3.0</temps_passe>
+                    <cout>2000.00</cout>
+                    <pieces_utilisees>
+                        <piece>
+                            <nom>Étrier de frein</nom>
+                            <reference>EB-456</reference>
+                            <quantite>2</quantite>
+                        </piece>
+                    </pieces_utilisees>
+                </operation>
+            </operations>
+        </maintenance>
+        <incidents>
+            <incident>
+                <date_incident>2024-08-15</date_incident>
+                <description>Surveillance du rotor - vibration excessive détectée</description>
+                <diagnostic>Usure des paliers du rotor principal</diagnostic>
+                <action_corrigée>Remplacement des paliers du rotor</action_corrigée>
+                <temps_arret>6.5</temps_arret>
+            </incident>
+            <incident>
+                <date_incident>2024-08-01</date_incident>
+                <description>Perte de puissance moteur pendant le vol</description>
+                <diagnostic>Défaut de la pompe à carburant</diagnostic>
+                <action_corrigée>Remplacement de la pompe à carburant</action_corrigée>
+                <temps_arret>4.0</temps_arret>
+            </incident>
+        </incidents>
+        <capteurs>
+            <capteur type="température">
+                <date>2024-08-18</date>
+                <valeur>85</valeur>
+                <unite>Celsius</unite>
+                <emplacement>Moteur</emplacement>
+            </capteur>
+            <capteur type="pression">
+                <date>2024-08-18</date>
+                <valeur>3.2</valeur>
+                <unite>Bar</unite>
+                <emplacement>Système hydraulique</emplacement>
+            </capteur>
+            <capteur type="vibration">
+                <date>2024-08-19</date>
+                <valeur>0.02</valeur>
+                <unite>G</unite>
+                <emplacement>Rotor principal</emplacement>
+            </capteur>
+        </capteurs>
+    </helicoptere>
+
+    <!-- Hélicoptère 2 -->
+    <helicoptere id="AS350B3" modele="AS350 Écureuil">
+        <maintenance>
+            <date_maintenance>2024-08-22</date_maintenance>
+            <technicien nom="Martin" prenom="Paul"/>
+            <operations>
+                <operation>
+                    <type>Maintenance corrective</type>
+                    <description>Réparation du circuit électrique du cockpit</description>
+                    <date>2024-08-20</date>
+                    <temps_passe>4.0</temps_passe>
+                    <cout>1800.00</cout>
+                    <pieces_utilisees>
+                        <piece>
+                            <nom>Câblage électrique</nom>
+                            <reference>CE-500</reference>
+                            <quantite>10</quantite>
+                        </piece>
+                        <piece>
+                            <nom>Fusible</nom>
+                            <reference>F-220</reference>
+                            <quantite>5</quantite>
+                        </piece>
+                    </pieces_utilisees>
+                </operation>
+                <operation>
+                    <type>Inspection de routine</type>
+                    <description>Vérification des systèmes hydrauliques</description>
+                    <date>2024-08-21</date>
+                    <temps_passe>2.0</temps_passe>
+                    <cout>800.00</cout>
+                </operation>
+            </operations>
+        </maintenance>
+        <incidents>
+            <incident>
+                <date_incident>2024-08-10</date_incident>
+                <description>Problème de surchauffe du moteur</description>
+                <diagnostic>Défaut du thermostat</diagnostic>
+                <action_corrigée>Remplacement du thermostat</action_corrigée>
+                <temps_arret>3.0</temps_arret>
+            </incident>
+            <incident>
+                <date_incident>2024-07-28</date_incident>
+                <description>Panne de l'ordinateur de bord</description>
+                <diagnostic>Défaillance du système informatique</diagnostic>
+                <action_corrigée>Réinitialisation du système et mise à jour du firmware</action_corrigée>
+                <temps_arret>2.5</temps_arret>
+            </incident>
+        </incidents>
+        <capteurs>
+            <capteur type="température">
+                <date>2024-08-20</date>
+                <valeur>90</valeur>
+                <unite>Celsius</unite>
+                <emplacement>Moteur</emplacement>
+            </capteur>
+            <capteur type="vibration">
+                <date>2024-08-21</date>
+                <valeur>0.03</valeur>
+                <unite>G</unite>
+                <emplacement>Rotor principal</emplacement>
+            </capteur>
+            <capteur type="niveau carburant">
+                <date>2024-08-22</date>
+                <valeur>75</valeur>
+                <unite>Pourcentage</unite>
+                <emplacement>Réservoir principal</emplacement>
+            </capteur>
+        </capteurs>
+    </helicoptere>
+</maintenance_report>
