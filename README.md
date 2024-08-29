@@ -44,3 +44,24 @@ Cette fonction suit un schéma similaire pour extraire des informations sur les 
 Ici, en plus de find(), on utilise get() pour extraire un attribut XML (comme type).
 
 root.findall('helicoptere') : Retourne une liste de tous les éléments <helicoptere> sous la racine.
+
+
+#Explication des Étapes
+Chargement et Parsing du Fichier XML :
+
+Le fichier XML aviation.xml est chargé et parsé pour extraire les données sur les hélicoptères, les opérations, les incidents, et les capteurs.
+Définition des Modèles SQLAlchemy :
+
+Les modèles pour les tables helicopteres, operations, pieces_utilisees, incidents, et capteurs sont définis en utilisant SQLAlchemy.
+Création des Tables dans la Base de Données :
+
+Base.metadata.create_all(engine) est utilisé pour créer les tables dans la base de données si elles n'existent pas déjà.
+Insertion des Données dans les Tables :
+
+Les données parsées sont insérées dans les tables correspondantes. Les opérations, incidents, et capteurs sont liés aux hélicoptères par des relations de clé étrangère.
+Gestion des Erreurs :
+
+Les erreurs sont gérées, notamment les erreurs d'intégrité et les erreurs inattendues. Si une erreur se produit, la transaction est annulée pour éviter des insertions partielles.
+Fermeture de la Session :
+
+La session SQLAlchemy est fermée à la fin de l'insertion des données.
